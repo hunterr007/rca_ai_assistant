@@ -1,0 +1,6 @@
+python-dotenv
+requests
+faiss-cpu
+sentence-transformers
+pandas
+PyPDF2
