@@ -1,0 +1,4 @@
+wonum,description,longdescription,assetnum,asset_desc,model
+WO-1001,Leak Detected,Leak found at seal near discharge flange,PUMP-001,Main Feed Pump,W+ Series
+WO-1002,Motor Overheating,Temperature exceeds safe threshold,MOTOR-001,Motor for Pump-001,MTR-5000
+WO-1003,Vibration Issue,Excessive vibration during startup,PUMP-002,Recirculation Pump,PWI-300

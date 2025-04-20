@@ -128,21 +128,21 @@ def main():
 
         relevant_docs = doc_df.iloc[indices[0]]
         context = "\n\n".join([
-            f"File: {row['file']} | Page: {row['page']}\n{row['content']}"
+            f"| File | Page | Content |\n|------|------|---------|\n| {row['file']} | {row['page']} | {row['content'][:300].replace('\n', ' ')}... |"
             for _, row in relevant_docs.iterrows()
         ])
 
         prompt = f"""
         You are a root cause analysis expert.
-        Based on the documents provided below, identify possible root causes for the issue:
+        Based on the documents provided below, identify possible root causes for the issue.
 
         Issue:
         {issue}
 
-        Documents:
+        Documents Table:
         {context}
 
-        Respond with a clear summary of possible root causes, supporting evidence, and reference file names and page numbers.
+        Summarize the most likely root causes based only on the table above. Mention supporting evidence and reference file names and page numbers.
         """
 
         try:

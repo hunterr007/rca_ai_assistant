@@ -1,0 +1,4 @@
+assetnum,description,type,model,manufacturer
+PUMP-001,Main Feed Pump,Horizontal Centrifugal,W+ Series,APV
+PUMP-002,Recirculation Pump,Vertical Inline,PWI-300,Grundfos
+MOTOR-001,Motor for Pump-001,Induction Motor,MTR-5000,Siemens
